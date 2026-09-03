@@ -6,7 +6,10 @@ If you discover a security vulnerability in FlowShot, please report it responsib
 
 **Do not open a public GitHub issue for security vulnerabilities.**
 
-Instead, please email security concerns to: security@westpoint.io
+Instead, please open a private security advisory on GitHub:
+- Go to the **Security** tab of the repository
+- Click **Report a vulnerability**
+- Fill in the details
 
 Include:
 - Description of the vulnerability
@@ -16,8 +19,7 @@ Include:
 
 ## What We'll Do
 
-- Acknowledge receipt within 48 hours
-- Provide an initial assessment within 5 business days
+- Acknowledge receipt as soon as possible
 - Work with you to understand and resolve the issue
 - Credit you in the release notes (unless you prefer anonymity)
 

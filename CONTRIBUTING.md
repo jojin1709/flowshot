@@ -1,6 +1,6 @@
 # Contributing to FlowShot
 
-Thanks for your interest in contributing! Bug reports, feature requests, PRs, and translations are all welcome.
+Thanks for your interest in contributing! Bug reports, feature requests, and translations are all welcome.
 
 ## Licensing
 
@@ -14,13 +14,13 @@ You represent that you have the right to submit the contribution and that it doe
 
 - Node.js 22+
 - [pnpm](https://pnpm.io) 10+
-- Chrome or Firefox (for testing)
+- Chrome, Firefox, Edge, or Brave (for testing)
 
 ### Install
 
 ```bash
-git clone https://github.com/westpoint-io/mimik.git
-cd mimik
+git clone https://github.com/jojin1709/flowshot.git
+cd flowshot
 pnpm install
 ```
 
@@ -64,7 +64,7 @@ src/
 ├── core/                    # Business logic (no UI dependencies)
 │   ├── capture/             # Recording pipeline (events, AI, DOM context)
 │   ├── blur/                # Smart blur (regex presets, DOM scanner, panel)
-│   ├── export/              # HTML, PDF, Markdown generators
+│   ├── export/              # HTML, PDF, DOCX, Markdown, Video generators
 │   ├── guideme/             # Guide replay (finder, overlay, session)
 │   └── guides/              # Data layer (types, Dexie DB, CRUD)
 ├── entrypoints/             # WXT extension entry points
@@ -74,7 +74,7 @@ src/
 │   ├── fullview/            # Full-page dashboard mount
 │   ├── onboarding/          # First-install wizard
 │   └── options/             # Settings page mount
-├── locales/                 # YAML translation files (en, es, pt-BR, fr)
+├── locales/                 # YAML translation files (en, es, pt-BR, fr, de)
 ├── lib/                     # Shared utilities (messaging, port, browser API)
 ├── stores/                  # Zustand state stores
 └── ui/                      # React components
@@ -113,13 +113,11 @@ src/
    - `chore:` tooling/deps
 5. Open a PR with a clear description of what and why
 
-CI (`pr-test.yml`) will run lint, tests, and both browser builds on every PR.
-
 ## Adding a Translation
 
 To add a new language:
 
-1. Create `src/locales/{lang-code}.yml` (e.g., `src/locales/de.yml`)
+1. Create `src/locales/{lang-code}.yml` (e.g., `src/locales/ja.yml`)
 2. Copy the structure from `src/locales/en.yml`
 3. Translate all values, keeping the keys identical
 4. Keep substitution placeholders (`$1`, `$2`) in the same positions
@@ -135,3 +133,9 @@ Open an issue with:
 - Browser + version (Chrome / Firefox / Edge / Brave)
 - Screenshots if relevant
 - Any errors from the extension console (`chrome://extensions` → FlowShot → "service worker" → Console, or Firefox `about:debugging` → Inspect)
+
+## Code Style
+
+- We use [Biome](https://biomejs.dev) for linting and formatting
+- Run `pnpm lint:fix` before committing
+- Follow existing code patterns in the project
