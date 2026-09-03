@@ -102,54 +102,28 @@ Available in English, Spanish, Brazilian Portuguese, French, and German. The AI 
 
 ---
 
-## Quick Start
+## Download & Install
 
-### Prerequisites
+Download the latest release from the [**Releases page**](https://github.com/jojin1709/flowshot/releases/tag/v1.2.0).
 
-- Node.js 22+
-- [pnpm](https://pnpm.io) 10+
-- Chrome, Firefox, Edge, or Brave (for testing)
+| Browser | Download |
+|---------|----------|
+| Chrome / Edge / Brave | [flowshot-1.2.0-chrome.zip](https://github.com/jojin1709/flowshot/releases/download/v1.2.0/flowshot-1.2.0-chrome.zip) |
+| Firefox | [flowshot-1.2.0.xpi](https://github.com/jojin1709/flowshot/releases/download/v1.2.0/flowshot-1.2.0.xpi) |
 
-### Install
+### Installation
 
-```bash
-git clone <your-repo-url>
-cd flowshot
-pnpm install
-```
+**Chrome / Edge / Brave:**
+1. Download and extract the Chrome zip
+2. Open `chrome://extensions` (or `edge://extensions`)
+3. Enable **Developer Mode**
+4. Drag and drop the extracted folder onto the page
 
-### Run in Development
-
-```bash
-pnpm dev                   # Chrome (MV3) with HMR
-pnpm dev:firefox           # Firefox (MV3) with HMR
-```
-
-WXT launches a fresh browser instance with the extension loaded.
-
-### Build
-
-```bash
-pnpm build                 # Chrome
-pnpm build:firefox         # Firefox
-pnpm zip:all               # Package both browsers
-```
-
-### Test
-
-```bash
-pnpm test                  # Run all tests once
-pnpm test:watch            # Watch mode
-pnpm test:cov              # Coverage report
-```
-
-### Lint & Format
-
-```bash
-pnpm lint                  # Check
-pnpm lint:fix              # Auto-fix
-pnpm format                # Format only
-```
+**Firefox:**
+1. Download the `.xpi` file
+2. Open Firefox and go to `about:addons`
+3. Click the gear icon → **Install Add-on From File**
+4. Select the downloaded `.xpi` file
 
 ---
 
