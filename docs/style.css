@@ -653,7 +653,7 @@ body {
 }
 
 .browser-icon svg {
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 .browser-card span {
