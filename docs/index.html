@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowShot — Auto-Capture Browser Workflows</title>
+  <meta name="description" content="Auto-capture any browser workflow into a step-by-step guide. No account, no cloud, no tracking.">
+  <link rel="icon" type="image/svg+xml" href="../public/icon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="../public/icon.svg" alt="FlowShot" width="36" height="36">
+        <span>FlowShot</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#browsers">Browsers</a>
+        <a href="#download" class="nav-cta">Get Started</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#browsers">Browsers</a>
+    <a href="#download" class="nav-cta">Get Started</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge animate-on-scroll">
+        <span class="badge-dot"></span>
+        Open Source & Free
+      </div>
+      <h1 class="hero-title animate-on-scroll">
+        Auto-Capture Any<br>
+        <span class="gradient-text">Browser Workflow</span>
+      </h1>
+      <p class="hero-subtitle animate-on-scroll">
+        Click record, do the thing, get a polished guide with annotated screenshots. 
+        Narrate it as you go, edit it after, then replay or export. 
+        <strong>No account, no cloud, no tracking.</strong>
+      </p>
+      <div class="hero-buttons animate-on-scroll">
+        <a href="#download" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Get FlowShot
+        </a>
+        <a href="https://github.com/jojin1709/flowshot" target="_blank" class="btn btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          View on GitHub
+        </a>
+      </div>
+      <div class="hero-stats animate-on-scroll">
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Local</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Tracking</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Browsers</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual animate-on-scroll">
+      <div class="hero-mascot">
+        <img src="../public/mascot.svg" alt="FlowShot Mascot" width="280" height="280">
+      </div>
+      <div class="floating-card card-1">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+        Screenshot captured
+      </div>
+      <div class="floating-card card-2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Step auto-generated
+      </div>
+      <div class="floating-card card-3">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Guide ready
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge">Features</span>
+        <h2>Everything you need to<br><span class="gradient-text">document workflows</span></h2>
+        <p>From recording to export, FlowShot handles it all automatically.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #4F46E5, #3730A3);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Smart Blur</h3>
+          <p>Automatically detects and blurs sensitive data: emails, phone numbers, credit cards, SSNs, IP addresses. Toggle each category independently.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #8B5CF6, #6D28D9);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h3>AI Descriptions</h3>
+          <p>Bring your own API key and get human-readable step descriptions. 15-30x cheaper than vision models — uses DOM context, not screenshots.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #10B981, #059669);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+          </div>
+          <h3>Guide Me Replay</h3>
+          <p>Replay any guide live on a real page. Highlights the next element, tracks progress, and advances automatically as you interact.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #F59E0B, #D97706);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+          </div>
+          <h3>Voice Narration</h3>
+          <p>Talk through the workflow while recording. FlowShot transcribes your narration and matches it to each step automatically.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #EC4899, #DB2777);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+            </svg>
+          </div>
+          <h3>Guide Editor</h3>
+          <p>Fix guides after recording. Crop, annotate, redact screenshots, rewrite steps with AI, add headings, reorder, and version history.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #06B6D4, #0891B2);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </div>
+          <h3>Multi-Format Export</h3>
+          <p>Export as Video (mp4), PDF, DOCX, HTML, or Markdown. All generated client-side — nothing touches a server.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge">How It Works</span>
+        <h2>Three steps to<br><span class="gradient-text">perfect documentation</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step animate-on-scroll">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Record</h3>
+            <p>Click the FlowShot icon and start recording. Perform your workflow normally — every click, keystroke, and navigation is captured automatically.</p>
+          </div>
+          <div class="step-visual">
+            <div class="step-icon pulse">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="3" fill="#EF4444"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step animate-on-scroll">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Capture</h3>
+            <p>Each action becomes a step with an annotated screenshot. Smart blur protects sensitive data. AI generates clear descriptions.</p>
+          </div>
+          <div class="step-visual">
+            <div class="step-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step animate-on-scroll">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Share</h3>
+            <p>Export your guide as Video, PDF, DOCX, HTML, or Markdown. Replay it live on any page. Share with your team.</p>
+          </div>
+          <div class="step-visual">
+            <div class="step-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"/>
+                <circle cx="6" cy="12" r="3"/>
+                <circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browsers Section -->
+  <section class="browsers" id="browsers">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-badge">Supported Browsers</span>
+        <h2>Works everywhere<br><span class="gradient-text">you browse</span></h2>
+      </div>
+      <div class="browsers-grid animate-on-scroll">
+        <div class="browser-card">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="#4285F4" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="#4285F4"/>
+          </svg>
+          <span>Chrome</span>
+        </div>
+        <div class="browser-card">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="#FF7139" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="#FF7139"/>
+          </svg>
+          <span>Firefox</span>
+        </div>
+        <div class="browser-card">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="#0078D7" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="#0078D7"/>
+          </svg>
+          <span>Edge</span>
+        </div>
+        <div class="browser-card">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="#FB542B" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="#FB542B"/>
+          </svg>
+          <span>Brave</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="download-card animate-on-scroll">
+        <div class="download-content">
+          <h2>Get FlowShot</h2>
+          <p>Free, open source, and privacy-first. Start documenting your workflows today.</p>
+          <div class="download-buttons">
+            <a href="https://github.com/jojin1709/flowshot" target="_blank" class="btn btn-primary btn-large">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Download from GitHub
+            </a>
+          </div>
+        </div>
+        <div class="download-visual">
+          <img src="../public/mascot.svg" alt="FlowShot" width="200" height="200">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="../public/icon.svg" alt="FlowShot" width="32" height="32">
+          <span>FlowShot</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/jojin1709/flowshot" target="_blank">GitHub</a>
+          <a href="https://github.com/jojin1709/flowshot/blob/main/LICENSE" target="_blank">License</a>
+          <a href="https://github.com/jojin1709/flowshot/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a>
+          <a href="https://github.com/jojin1709/flowshot/blob/main/CODE_OF_CONDUCT.md" target="_blank">Code of Conduct</a>
+        </div>
+        <div class="footer-credit">
+          Developed by <strong>Jojin John</strong>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>MIT License &copy; 2026 Jojin John. Built with privacy in mind.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

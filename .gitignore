@@ -4,7 +4,6 @@ node_modules/
 dist/
 coverage/
 .planning/
-docs/
 .source/
 .claude/
 mockups/
